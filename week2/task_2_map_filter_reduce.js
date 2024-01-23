@@ -21,7 +21,8 @@ const students = [
 // Using map and filter chaining
 const filteredNames = students
   .filter(student => student.age > 18)
-  .map(student => student.name);
+  .map(student => student)
+//   .map(student => student.name);
 
 console.log('Using map and filter chaining:', filteredNames);
 

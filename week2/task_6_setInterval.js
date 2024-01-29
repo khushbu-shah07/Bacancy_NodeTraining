@@ -14,12 +14,12 @@
 
 let intervalId;
 document.getElementById("start").addEventListener('click', function () {
-    intervalId = setInterval(startby, 1000);
+  intervalId = setInterval(startby, 1000);
 });
 function startby() {
-    console.log("Hello");
+  console.log("Hello");
 }
 
 document.getElementById("stop").addEventListener('click', function () {
-    clearInterval(intervalId);  // stop the interval
+  clearInterval(intervalId);  // stop the interval
 })

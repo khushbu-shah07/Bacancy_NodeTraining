@@ -7,22 +7,25 @@ async function fetchUsers() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const users = await response.json();
+    // eslint-disable-next-line no-use-before-define
     displayUsers(users);
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('There has been a problem with your fetch operation:', error);
   }
 }
 
 function displayUsers(users) {
+  // eslint-disable-next-line no-undef
   const usersDiv = document.getElementById('users');
   let html = '';
-  users.forEach(user => {
+  users.forEach((user) => {
     html += `<p>Name: ${user.name}</p>`;
     html += `<p>Email: ${user.email}</p>`;
     html += `<p>Address: ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>`;
     html += `<p>Phone: ${user.phone}</p>`;
     html += `<p>Website: ${user.website}</p>`;
-    html += `<hr>`;
+    html += '<hr>';
   });
   usersDiv.innerHTML = html;
 }

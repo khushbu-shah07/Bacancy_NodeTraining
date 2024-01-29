@@ -31,12 +31,13 @@
 
 
 const sleep = async () => {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-        await new Promise((resolve, reject) => {
-            setTimeout(resolve, 2000)
-        })
-    }
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+    await new Promise((resolve, reject) => {
+      setTimeout(resolve, 2000)
+    })
+  }
 }
 
 sleep();

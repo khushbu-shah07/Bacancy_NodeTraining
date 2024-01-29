@@ -2,22 +2,27 @@
 
 const apiKey = '8695167b522d4d8b700c33bbbbc3594f'; 
 
+// eslint-disable-next-line no-unused-vars
 function getWeather() {
+  // eslint-disable-next-line no-undef
   const cityName = document.getElementById('city-input').value;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
   fetch(url)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error('Error in API call');
       }
       return response.json();
     })
-    .then(data => {
+    .then((data) => {
+      // eslint-disable-next-line no-use-before-define
       displayWeatherData(data);
     })
-    .catch(error => {
+    .catch((error) => {
+      // eslint-disable-next-line no-console
       console.error(error);
+      // eslint-disable-next-line no-alert, no-undef
       alert('Error in API call. Please try again.');
     });
 }

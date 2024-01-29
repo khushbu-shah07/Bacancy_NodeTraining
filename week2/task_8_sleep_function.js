@@ -13,7 +13,6 @@
 // }
 // sleepfunc();
 
-
 // By making arrow function
 // const sleep = (time) =>{
 //     return new Promise((resolve) => setTimeout(resolve, time));
@@ -28,21 +27,19 @@
 
 // sleepfunc();
 
-
-
 const sleep = async () => {
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < 5; i++) {
+    // eslint-disable-next-line no-console
     console.log(i);
+    // eslint-disable-next-line no-await-in-loop, no-unused-vars
     await new Promise((resolve, reject) => {
-      setTimeout(resolve, 2000)
-    })
+      setTimeout(resolve, 2000);
+    });
   }
-}
+};
 
 sleep();
-
-
 
 // Added the condition to reject the promise
 // const sleep = async () => {

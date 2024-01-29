@@ -11,7 +11,6 @@
 //         console.log("helloo!!")
 //     }
 
-
 let intervalId;
 document.getElementById("start").addEventListener('click', function () {
   intervalId = setInterval(startby, 1000);

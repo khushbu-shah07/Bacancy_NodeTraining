@@ -1,6 +1,6 @@
 // Create a program that makes an API call and displays all the retrieved data on a web page. Choose a public API (e.g., JSONPlaceholder, OpenWeatherMap) and use the fetch function to make the API request. Also implement error handling
 
-const apiKey = '8695167b522d4d8b700c33bbbbc3594f'; 
+const apiKey = '8695167b522d4d8b700c33bbbbc3594f';
 
 // eslint-disable-next-line no-unused-vars
 function getWeather() {
@@ -28,6 +28,7 @@ function getWeather() {
 }
 
 function displayWeatherData(data) {
+  // eslint-disable-next-line no-undef
   const weatherDataDiv = document.getElementById('weather-data');
   weatherDataDiv.innerHTML = `
     <h2>${data.name}, ${data.sys.country}</h2>

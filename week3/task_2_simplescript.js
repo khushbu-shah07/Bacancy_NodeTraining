@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 /* eslint-disable no-trailing-spaces */
 
-import moment from 'moment';
-// const moment = require('moment');
+// import moment from 'moment';
+const moment = require('moment');
 
 console.log(`Current Date And Time:  ${moment().format()}`); 
 

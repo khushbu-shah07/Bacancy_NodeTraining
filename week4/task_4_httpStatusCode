@@ -1,0 +1,26 @@
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+
+Some Imp./frequently used Status Codes: 
+200  OK/Success
+201  Created
+202  Accepted
+203  Partial Information
+204  No Content
+301  Moved permanently/ permanent redirect
+302  Found
+304  Content Not Modified
+400  Bad request
+401  Unauthorized Error
+402  Payment Required
+403  Forbidden
+404  Not Found 
+500  Internal Server Error
+501  Not Implemented
+503  Service Unavailable
+
+// Respective status codes are added in the files.

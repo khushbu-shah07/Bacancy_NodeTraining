@@ -4,6 +4,7 @@ let index = 0;
 while (index < stringsArray.length && stringsArray[index].length <= 8) {
   // eslint-disable-next-line no-loop-func
   stringsArray.forEach((str, i) => {
+    // console.log("index = " , index , " --->i =" , i);
     if (i === index) {
       // eslint-disable-next-line no-console
       console.log(`${str}!`);

@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-alert */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-console */
 // Create a program that makes an API call and displays all the retrieved data on a web page. Choose a public API (e.g., JSONPlaceholder, OpenWeatherMap) and use the fetch function to make the API request. Also implement error handling
 
 const apiKey = '8695167b522d4d8b700c33bbbbc3594f';
@@ -16,19 +20,15 @@ function getWeather() {
       return response.json();
     })
     .then((data) => {
-      // eslint-disable-next-line no-use-before-define
       displayWeatherData(data);
     })
     .catch((error) => {
-      // eslint-disable-next-line no-console
       console.error(error);
-      // eslint-disable-next-line no-alert, no-undef
       alert('Error in API call. Please try again.');
     });
 }
 
 function displayWeatherData(data) {
-  // eslint-disable-next-line no-undef
   const weatherDataDiv = document.getElementById('weather-data');
   weatherDataDiv.innerHTML = `
     <h2>${data.name}, ${data.sys.country}</h2>

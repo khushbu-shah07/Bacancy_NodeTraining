@@ -4,8 +4,8 @@
 if (process.argv.length !== 5) {
   console.log('Usage: node filename.js <number1> <number2> <operation>');
 } else {
-  const number1 = parseFloat(process.argv[2]);
-  const number2 = parseFloat(process.argv[3]);
+  const number1 = parseInt(process.argv[2], 10); // can also use parseFloat instead of parseInt
+  const number2 = parseInt(process.argv[3], 10);
   const operation = process.argv[4].toLowerCase();
 
   if(isNaN(number1) || isNaN(number2)) {

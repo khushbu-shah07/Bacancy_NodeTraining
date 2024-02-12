@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // constant
 
 // Constants declaration
@@ -8,9 +9,7 @@ const MAX_VALUE = 100;
 // PI = 3.14159;  // Error: Assignment to constant variable
 // MAX_VALUE = 200;  // Error: Assignment to constant variable
 
-// eslint-disable-next-line no-console
 console.log('PI:', PI);
-// eslint-disable-next-line no-console
 console.log('MAX_VALUE:', MAX_VALUE);
 
 // Concept of Immutability with const:
@@ -27,5 +26,4 @@ console.log('MAX_VALUE:', MAX_VALUE);
 const radius = 5;
 const circumference = 2 * PI * radius;
 
-// eslint-disable-next-line no-console
 console.log('Circumference with radius 5:', circumference);

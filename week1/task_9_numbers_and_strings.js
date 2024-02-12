@@ -1,13 +1,14 @@
-let age = 21;
-let name = 'khushbu'
-let isStudent = true
+/* eslint-disable no-console */
+const age = 21;
+const name = 'khushbu';
+const isStudent = true;
 
-let greeting = 'Hello! ' + name;
+const greeting = `Hello! ${name}`;
 console.log(greeting);
-let agetoString = String(age);
+const agetoString = String(age);
 
-console.log('Age: ', agetoString)
+console.log('Age: ', agetoString);
 
-let studentStatus = 'Is a student ? ' + isStudent;
+const studentStatus = `Is a student? ${isStudent}`;
 
-console.log(studentStatus)
+console.log(studentStatus);

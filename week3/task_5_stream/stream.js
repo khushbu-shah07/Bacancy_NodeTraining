@@ -8,7 +8,7 @@ const readStream = fs.createReadStream('./input.txt', 'utf-8');
 const writeStream = fs.createWriteStream('./output.txt');
 
 readStream.on('data', (chunk) => {
-  console.log('Data received in chunks', chunk);
+  console.log('Data received in chunks:  ', chunk);
 
   writeStream.write(chunk);
 });

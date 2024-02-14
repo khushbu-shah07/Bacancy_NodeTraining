@@ -15,7 +15,7 @@ Some Imp./frequently used Status Codes:
 302  Found
 304  Content Not Modified
 400  Bad request
-401  Unauthorized Error
+401  Unauthorized User
 402  Payment Required
 403  Forbidden
 404  Not Found 

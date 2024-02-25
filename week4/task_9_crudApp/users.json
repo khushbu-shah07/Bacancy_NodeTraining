@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Khushbu Shah",
+    "age": 21,
+    "id": "8ff89c6b-0054-43bf-b396-cd43e029dd8a"
+  },
+  {
+    "name": "Ved Sharma",
+    "age": 20,
+    "id": "22b8ad35-7ce1-4ceb-84dc-217525a80bf4"
+  },
+  {
+    "name": "Vatsal Patel",
+    "age": 22,
+    "id": "bdf19cb6-5609-4180-bbb5-df1b269bdbe9"
+  },
+  {
+    "name": "Manali Patel",
+    "age": 22,
+    "id": "6b4ed73f-706d-4b47-9d2f-4c6723db5f7f"
+  },
+  {
+    "name": "Pakhi Shah",
+    "age": 24,
+    "id": "ff47dba3-a226-43cb-8a09-37db9ef56cfb"
+  },
+  { "id": "38119db5-6726-4368-9869-2f9f3e4cd10e", "name": "Bhavik", "age": 27 }
+]
